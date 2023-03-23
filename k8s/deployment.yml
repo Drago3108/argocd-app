@@ -4,6 +4,7 @@ metadata:
   labels:
     app: dhamu-app
   name: dhamu-app
+  namespace: app-testing
 spec:
   replicas: 1
   selector:
@@ -16,5 +17,7 @@ spec:
         app: dhamu-app
     spec:
       containers:
-      - image: dhamodaranthulasi/nodejs:1.0
-        name: nodejs
+      - image: dhamodaranthulasi/argocd:v1
+        name: node-app
+      imagePullSecrets:
+      - name: argocd-integration 
