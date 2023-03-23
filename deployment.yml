@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: dhamu-app
+  name: dhamu-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dhamu-app
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: dhamu-app
+    spec:
+      containers:
+      - image: httpd
+        name: httpd
