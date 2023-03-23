@@ -16,5 +16,5 @@ spec:
         app: dhamu-app
     spec:
       containers:
-      - image: httpd
-        name: httpd
+      - image: dhamodaranthulasi/nodejs:1.0
+        name: nodejs
