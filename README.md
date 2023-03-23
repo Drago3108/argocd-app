@@ -1,1 +1,2 @@
+finalized
 # argocd-app
