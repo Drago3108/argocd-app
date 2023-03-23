@@ -17,7 +17,7 @@ spec:
         app: dhamu-app
     spec:
       containers:
-      - image: dhamodaranthulasi/argocd:v1
+      - image: dhamodaranthulasi/argocd:v2
         name: node-app
       imagePullSecrets:
       - name: argocd-integration 
