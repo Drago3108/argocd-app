@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: application-cm
+data:
+  name: Dhamodaran
+  initial: V T
+  hometown: EKM
