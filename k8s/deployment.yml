@@ -5,7 +5,7 @@ metadata:
     app: dhamu-app
   name: dhamu-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: dhamu-app
